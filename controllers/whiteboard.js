@@ -82,3 +82,22 @@ exports.getWhiteboard = (req, res, next) => {
         })
 
 }
+
+
+
+exports.resetBoard = (req, res, next) => {
+    console.log('resetting whiteboard...');
+    const user = req.params.user;
+    console.log('passed user is --> ' + user);
+
+    Whiteboard.deleteMany({user: user})
+        .then(result => {
+            res.status(201).json({
+                message: "Deleting successful."
+            });
+        })
+        .catch(err => {
+            console.log(err);
+        })
+
+}

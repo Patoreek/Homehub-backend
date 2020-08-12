@@ -6,6 +6,8 @@ const cors = require('cors');
 
 // ROUTES
 const whiteboardRoutes = require('./routes/whiteboard');
+const todoRoutes = require('./routes/todo');
+
 
 const MONGODB_URI = 'mongodb+srv://pminda:qwerty12345@cluster0-wbn9g.mongodb.net/homehub?retryWrites=true&w=majority';
 
@@ -22,6 +24,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.use('/whiteboard', whiteboardRoutes);
+app.use('/todo', todoRoutes);
 
 
 

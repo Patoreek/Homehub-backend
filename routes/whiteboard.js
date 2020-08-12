@@ -11,6 +11,7 @@ router.post('/deleteItem', whiteboardController.deleteItem);
 
 router.get('/getWhiteboard/:user', whiteboardController.getWhiteboard);
 
+router.get('/resetBoard/:user', whiteboardController.resetBoard);
 
 
 
