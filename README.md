@@ -18,7 +18,7 @@ npm start
 ```
 
 ## Usage
-Running this will simply run the _backend_ of Homehub. The backend can be found [here](https://github.com/Patoreek/Homehub).
+Running this will simply run the **backend** of Homehub. The backend can be found [here](https://github.com/Patoreek/Homehub).
 Once started, the REST API will run and connect the routes to the frontend.
 
 ## Credits
